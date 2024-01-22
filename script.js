@@ -42,6 +42,26 @@ function start_turn(cell_clicked){
                 document.querySelector('#cell' + i).classList.remove("may_cont_black_king");
             if(classes_to_string2.includes("may_cont_white_king"))
                 document.querySelector('#cell' + i).classList.remove("may_cont_white_king");
+            if(classes_to_string2.includes("may_eat_and_cont_white_piece"))
+                document.querySelector('#cell' + i).classList.remove("may_eat_and_cont_white_piece1");
+                document.querySelector('#cell' + i).classList.remove("may_eat_and_cont_white_piece2");
+                document.querySelector('#cell' + i).classList.remove("may_eat_and_cont_white_piece3");
+                document.querySelector('#cell' + i).classList.remove("may_eat_and_cont_white_piece4");
+            if(classes_to_string2.includes("may_eat_and_cont_black_piece"))
+                document.querySelector('#cell' + i).classList.remove("may_eat_and_cont_black_piece1");
+                document.querySelector('#cell' + i).classList.remove("may_eat_and_cont_black_piece2");
+                document.querySelector('#cell' + i).classList.remove("may_eat_and_cont_black_piece3");
+                document.querySelector('#cell' + i).classList.remove("may_eat_and_cont_black_piece4");
+            if(classes_to_string2.includes("may_eat_and_cont_black_king"))
+                document.querySelector('#cell' + i).classList.remove("may_eat_and_cont_black_king1");
+                document.querySelector('#cell' + i).classList.remove("may_eat_and_cont_black_king2");
+                document.querySelector('#cell' + i).classList.remove("may_eat_and_cont_black_king3");
+                document.querySelector('#cell' + i).classList.remove("may_eat_and_cont_black_king4");
+            if(classes_to_string2.includes("may_eat_and_cont_white_king"))
+                document.querySelector('#cell' + i).classList.remove("may_eat_and_cont_white_king1");
+                document.querySelector('#cell' + i).classList.remove("may_eat_and_cont_white_king2");
+                document.querySelector('#cell' + i).classList.remove("may_eat_and_cont_white_king3");
+                document.querySelector('#cell' + i).classList.remove("may_eat_and_cont_white_king4");
             color_board()
         }
         let there_is_piece_can_eat = false;
